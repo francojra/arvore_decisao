@@ -41,3 +41,4 @@ View(prev)
 
 library(caret)
 
+confusionMatrix(prev, teste$Species)
