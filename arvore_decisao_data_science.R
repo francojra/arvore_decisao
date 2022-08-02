@@ -20,6 +20,13 @@ filtro <- sample(1:nrow(iris), nrow(iris) * 0.7)
 treino <- iris[filtro, ]
 teste <- iris[-filtro, ]
 
+# Pacote com um algoritmo de árvore de decisão ---------------------------------------------------------------------------------------------
+
+library(rpart)
+
+# Criando modelo ---------------------------------------------------------------------------------------------------------------------------
+
+modelo <- rpart(Species ~., data = treino)
 
 
 
