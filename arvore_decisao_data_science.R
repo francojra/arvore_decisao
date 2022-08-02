@@ -28,5 +28,8 @@ library(rpart)
 
 modelo <- rpart(Species ~., data = treino)
 
+# Visualizando a árvore de decisão ---------------------------------------------------------------------------------------------------------
 
+library(rpart.plot)
 
+prp(modelo, extra = 1)
