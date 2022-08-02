@@ -33,3 +33,11 @@ modelo <- rpart(Species ~., data = treino)
 library(rpart.plot)
 
 prp(modelo, extra = 1)
+
+# Resultados no dataset de teste -----------------------------------------------------------------------------------------------------------
+
+prev <- predict(modelo, teste, type = "class")
+View(prev)
+
+library(caret)
+
